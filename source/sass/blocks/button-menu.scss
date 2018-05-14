@@ -1,0 +1,52 @@
+.button-menu {
+  margin: 0;
+  padding: 0;
+  display: block;
+  width: 85px;
+  height: 20px;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 16px;
+  border: none;
+}
+
+.button-menu--top {
+  padding-left: 15px;
+  padding-bottom: 11px;
+  color: #6b737a;
+  background-color: #efefef;
+  background-image: url("../img/icon-menu-open.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  box-sizing: border-box;
+}
+
+.button-menu--middle {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 45px;
+  width: 160px;
+  height: 45px;
+  font-size: 14px;
+  line-height: 17px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  background-color: #06356d;
+  background-image: url("../img/icon-menu-open-middle.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 15px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .button-menu {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button-menu {
+    display: none;
+  }
+}

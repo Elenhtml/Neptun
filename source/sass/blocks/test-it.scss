@@ -1,0 +1,109 @@
+.test-it {
+  padding: 54px 0 45px 0;
+  background-color: #04234b;
+  background-image: url("../img/test-photo-320.jpg");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: cover;
+}
+
+.test-it__main-title {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  color: #ffffff;
+  text-align: center;
+}
+
+.test-it__main-wrapper {
+  display: flex;
+  padding: 0 5px 35px 5px;
+}
+
+.test-it__parameter {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: bold;
+  color: #94d1ff;
+  text-align: center;
+
+  &--days {
+    width: 45px;
+  }
+
+  &--price {
+    width: 122px;
+  }
+
+  &--visits {
+    padding-top: 10px;
+    width: 141px;
+  }
+}
+
+.test-it__number {
+  margin: 0;
+  padding: 0;
+  font-size: 42px;
+  line-height: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .test-it {
+    background-image: url("../img/test-photo-768.jpg");
+  }
+
+  .test-it__main-title {
+    margin-bottom: 55px;
+  }
+
+  .test-it__parameter {
+    &--days {
+      padding-left: 135px;
+    }
+
+    &--price {
+      padding-left: 86px;
+    }
+
+    &--visits {
+      padding-top: 13px;
+      padding-left: 85px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .test-it {
+    background-image: url("../img/test-photo-desktop.jpg");
+  }
+
+  .test-it__main-title {
+    margin-bottom: 60px;
+  }
+
+  .test-it__container {
+    display: flex;
+  }
+
+  .test-it__main-wrapper {
+    padding: 0 0 55px 0;
+  }
+
+  .test-it__parameter {
+    &--days {
+      padding-left: 20px;
+    }
+
+    &--price {
+      padding-left: 86px;
+    }
+
+    &--visits {
+      padding-right: 83px;
+      padding-left: 70px;
+    }
+  }
+}

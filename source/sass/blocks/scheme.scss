@@ -1,0 +1,61 @@
+.scheme {
+  position: relative;
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 0;
+  padding-left: 40px;
+  color: #000000;
+  font-size: 14px;
+  line-height: 17px;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 29px;
+    height: 29px;
+    background-image: url("../img/scheme.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+}
+
+@media (min-width: 446px) and (max-width: $mobile-width-only) {
+  .scheme {
+    padding-top: 8px;
+
+    &::before {
+      top: 3px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .scheme {
+    padding-top: 10px;
+
+    &::before {
+      top: 5px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .scheme {
+    padding-top: 18px;
+
+    &::before {
+      top: 13px;
+    }
+
+    &--footer {
+      color: #ffffff;
+    }
+  }
+}

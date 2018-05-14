@@ -1,0 +1,21 @@
+.main-title {
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 22px;
+  line-height: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-title {
+    font-size: 36px;
+    line-height: 42px;
+  }
+}

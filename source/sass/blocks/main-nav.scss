@@ -1,0 +1,36 @@
+@media (max-width: $mobile-width-only) {
+  .main-nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav--closed .top-menu__item {
+    display: none;
+  }
+
+  .main-nav--opened .top-menu__item {
+    display: block;
+  }
+
+  .main-nav--nojs .button-menu--top {
+    display: none;
+  }
+
+  .main-nav--nojs .top-menu__item {
+    display: block;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    display: flex;
+    width: 640px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 100%;
+  }
+}

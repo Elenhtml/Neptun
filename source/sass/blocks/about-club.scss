@@ -1,0 +1,33 @@
+.about-club {
+  padding: 30px 12px 0 12px;
+}
+
+.about-club__main-title {
+  margin: 0;
+  margin-bottom: 33px;
+  padding: 0;
+  width: 296px;
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .about-club {
+    padding: 60px 12px 0 12px;
+  }
+
+  .about-club__main-title {
+    margin: 0 auto 90px auto;
+    width: 700px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-club {
+    padding: 60px 0 0 0;
+  }
+
+  .about-club__main-title {
+    margin: 0 auto 90px auto;
+    width: 969px;
+  }
+}

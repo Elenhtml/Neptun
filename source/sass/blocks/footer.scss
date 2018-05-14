@@ -1,0 +1,238 @@
+.footer {
+  width: 100%;
+  max-width: 767px;
+  box-sizing: border-box;
+  background-color: #0d3e7e;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 48px 5px 28px 5px;
+  box-sizing: border-box;
+}
+
+.footer__top-wrapper {
+  display: flex;
+  margin: 0 auto;
+  padding-bottom: 28px;
+}
+
+.footer__logo {
+  display: block;
+  margin-bottom: 20px;
+  text-transform: none;
+}
+
+.footer__telephone-numbers {
+  @include lists;
+  margin-bottom: 10px;
+}
+
+.footer__telephone-number {
+  font-size: 16px;
+  line-height: 19px;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.footer__address {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  width: 150px;
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+  text-align: left;
+}
+
+.footer__services {
+  @include lists;
+
+  &--right {
+    padding-left: 10px;
+  }
+
+  &--right .footer__service {
+    padding-left: 10px;
+    width: 140px;
+  }
+
+  &--bottom-right {
+    padding-left: 10px;
+  }
+}
+
+.footer__service {
+  margin-bottom: 8px;
+}
+
+.footer__link {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid #ffffff;
+  }
+}
+
+.footer__service-submenu {
+  @include lists;
+  padding-left: 10px;
+}
+
+.footer__bottom-wrapper {
+  display: flex;
+  margin: 0 auto;
+}
+
+.footer__club-scheme {
+  display: none;
+}
+
+.footer__bottom-container {
+  margin: 0 auto;
+  padding-top: 20px;
+  text-align: center;
+}
+
+.footer__copyright {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: #8f9db1;
+}
+
+.footer__email {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  color: #8f9db1;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    max-width: 1229px;
+  }
+
+  .footer__wrapper {
+    padding: 60px 30px 60px 30px;
+    width: 768px;
+  }
+
+  .footer__top-wrapper {
+    margin: 0;/*new*/
+    padding-bottom: 50px;
+  }
+
+  .footer__contacts-wrapper {
+    margin-right: 120px;
+  }
+
+  .footer__telephone-number {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .footer__address {
+    margin-bottom: 10px;
+    font-size: 14px;
+    line-height: 17px;
+    width: 239px;
+  }
+
+  .footer__services {
+    &--right {
+      padding-top: 10px;
+      padding-left: 0;
+    }
+
+    &--bottom-right {
+      padding-top: 0;
+      padding-left: 10px;
+    }
+
+    &--left {
+      margin-right: 186px;
+    }
+  }
+
+  .footer__service {
+    margin-bottom: 13px;
+  }
+
+  .footer__bottom-wrapper {
+    margin: 0;
+  }
+
+  .footer__bottom-container {
+    margin: 0;
+    margin-top: -42px;
+    margin-left: auto;
+    width: 340px;
+    text-align: left;
+    z-index: 5;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer {
+    max-width: 100%;
+  }
+
+  .footer__wrapper {
+    padding: 57px 30px 33px 2.4%;
+    width: 100%;
+    max-width: 1800px;
+  }
+
+  .footer__contacts-wrapper {
+    margin-right: 57px;
+  }
+
+  .footer__address {
+    width: 245px;
+  }
+
+  .footer__services {
+    &--right {
+      padding-top: 10px;
+      margin-right: 167px;
+    }
+
+    &--bottom-right {
+      padding-top: 10px;
+      padding-left: 0;
+    }
+
+    &--left {
+      padding-top: 10px;
+      margin-right: 105px;
+    }
+  }
+
+  .footer__club-scheme {
+    display: block;
+  }
+
+  .footer__bottom-container {
+    margin: 0 auto;
+    padding-top: 31px;
+    text-align: center;
+  }
+}

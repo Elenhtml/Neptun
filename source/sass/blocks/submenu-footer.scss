@@ -1,0 +1,25 @@
+.submenu-footer {
+  @include lists;
+}
+
+.submenu-footer__item {
+  padding-top: 5px;
+  padding-left: 10px;
+}
+
+.submenu-footer__item a {
+  font-size: 13px;
+  line-height: 15px;
+  color: #ffffff;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .submenu-footer__item {
+    padding-top: 8px;
+  }
+}

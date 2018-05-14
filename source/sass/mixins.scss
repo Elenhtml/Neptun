@@ -1,0 +1,21 @@
+@mixin lists {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin input-field {
+  margin: 0;
+  padding: 16px 29px 16px 0;
+  width: 260px;
+  border: none;
+  border-bottom: 2px solid #000000;
+  box-sizing: border-box;
+}
+
+@mixin catalog-link {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+  text-decoration: none;
+}

@@ -1,0 +1,37 @@
+@media (max-width: $mobile-width-only) {
+  .services-nav {
+    position: relative;
+    display: flex;
+  }
+
+  .services-nav--closed .bottom-menu__item {
+    display: none;
+  }
+
+  .services-nav--opened .bottom-menu__item {
+    display: block;
+  }
+
+  .services-nav--nojs .header__button-middle {
+    display: none;
+  }
+
+  .services-nav--nojs .bottom-menu__item {
+    display: block;
+  }
+
+  .services-nav__button-order {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services-nav {
+    margin: 0 auto;
+    padding: 0 30px;
+    width: 1230px;
+    box-sizing: border-box;
+  }
+}

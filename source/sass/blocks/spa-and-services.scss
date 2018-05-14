@@ -1,0 +1,159 @@
+.spa-and-services {
+  padding: 44px 0 13px 0;
+  background-color: #efefef;
+}
+
+.spa-and-services__main-title {
+  margin: 0;
+  margin-bottom: 40px;
+  padding: 0;
+  color: #626262;
+  text-align: center;
+}
+
+.spa-and-services__list {
+  @include lists;
+}
+
+.spa-and-services__list-item {
+  width: 320px;
+  background-color: #efefef;
+  box-sizing: border-box;
+
+  &:hover .spa-and-services__container {
+    display: block;
+  }
+
+  &:hover .spa-and-services__name {
+    color: #ffffff;
+    background-color: #0066b3;
+    background-image: url("../img/arrow-small-left.png");
+  }
+
+  &:active .spa-and-services__container {
+    display: block;
+  }
+}
+
+.spa-and-services__name {
+  display: block;
+  margin: 0;
+  padding: 10px 50px 9px 9px;
+  width: 320px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #7e7e7e;
+  font-weight: bold;
+  text-decoration: none;
+  background-color: #efefef;
+  background-image: url("../img/arrow-small-down.png");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  box-sizing: border-box;
+}
+
+.spa-and-services__container {
+  @include lists;
+  display: none;
+}
+
+.spa-and-services__items {
+  @include lists;
+  //display: none;
+  background-color: #efefef;
+}
+
+
+.spa-and-services__item {
+  margin-top: 20px;
+  width: 320px;
+}
+
+.spa-and-services__image {
+  display: block;
+  background-color: #efefef;
+}
+
+@media (min-width: $tablet-width) {
+  .spa-and-services {
+    padding: 37px 0 218px 0;
+  }
+
+  .spa-and-services__main-title {
+    margin-bottom: 60px;
+  }
+
+  .spa-and-services__main-wrapper {
+    position: relative;
+  }
+
+  .spa-and-services__list {
+    width: 270px;
+  }
+
+  .spa-and-services__list-item {
+    width: 270px;
+
+    &:hover .spa-and-services__name {
+      background-image: url("../img/arrow-small-next.png");
+    }
+  }
+
+  .spa-and-services__name {
+    padding: 10px 5px 9px 9px;
+    width: 270px;
+    background-image: url("../img/arrow-small-next.png");
+    background-position: 93% 57%;
+  }
+
+  .spa-and-services__items {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 498px;
+    z-index: 15;
+  }
+
+  .spa-and-services__item {
+    margin-top: 0;
+    margin-bottom: 30px;
+    padding-left: 27px;
+    width: 498px;
+    box-sizing: border-box;
+  }
+
+  .spa-and-services__image {
+    width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .spa-and-services {
+    padding: 50px 0 140px 0;
+  }
+
+  .spa-and-services__main-title {
+    margin-bottom: 54px;
+  }
+
+  .spa-and-services__items {
+    display: flex;
+    width: 870px;
+  }
+
+  .spa-and-services__item {
+    margin-bottom: 0;
+    padding-left: 0;
+    width: 435px;
+
+    &--sauna-lux-hall {
+      width: 570px;
+    }
+
+    &--sauna-lux-inner {
+      margin-left: auto;
+      width: 270px;
+      height: 330px;
+    }
+  }
+}

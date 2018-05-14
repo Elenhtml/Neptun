@@ -1,0 +1,100 @@
+.top-menu {
+  @include lists;
+  margin-top: 38px;
+  width: 320px;
+  border-top: 2px solid #ffffff;
+  z-index: 10;
+}
+
+.top-menu__item {
+  padding: 5px 37px 5px 37px;
+  width: 320px;
+  font-size: 13px;
+  line-height: 16px;
+  box-sizing: border-box;
+  background-color: #e4e4e4;
+
+  &--contacts {
+    display: none;
+  }
+}
+
+.top-menu__item:first-child {
+  padding-top: 17px;
+}
+
+.top-menu__item:last-child {
+  padding-bottom: 17px;
+}
+
+.top-menu__item a {
+  margin: 0;
+  padding: 0;
+  color: #6b737a;
+  text-decoration: none;
+}
+
+.top-menu__item a[href] {
+  &:hover {
+    border-bottom: 1px solid #6b737a;
+  }
+
+  &:active {
+    border-bottom: 1px dashed #6b737a;
+  }
+}
+
+.top-menu__item--logo {
+  padding: 22px 62px 22px 115px;
+}
+
+@media (min-width: $tablet-width) {
+  .top-menu {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 0;
+    width: 668px;
+    height: 38px;
+    background-color: #efefef;
+    border-top: none;
+  }
+
+  .top-menu__item {
+    margin-right: 29px;
+    padding: 0;
+    padding-top: 13px;
+    width: 70px;
+    height: 38px;
+    text-align: left;
+    background-color: #efefef;
+
+    &--club-cards {
+      width: 100px;
+    }
+
+    &--schedule {
+      width: 80px;
+    }
+
+    &--contacts {
+      display: block;
+    }
+  }
+
+  .top-menu__item:last-child {
+    margin-right: 0;
+  }
+
+  .top-menu__item:first-child {
+    padding-top: 13px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .top-menu {
+    width: 1025px;
+    height: 38px;
+    background-color: #efefef;
+    border-top: none;
+  }
+}
