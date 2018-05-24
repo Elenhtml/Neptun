@@ -12,18 +12,11 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  //width: 320px;
-  //max-width: 767px;
   box-sizing: border-box;
 }
 
-/*.main-contacts__inner-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}*/
-
 .main-contacts__header-logo {
-  margin-bottom: 12px; /*new*/
+  margin-bottom: 12px;
   display: block;
 }
 

@@ -22,6 +22,7 @@
   height: 51px;
   background-color: rgba(0, 0, 0, 0.7);
   border: none;
+  z-index: 5;
 
   &::before {
     content: "";
@@ -92,6 +93,12 @@
   border: none;
 }
 
+@media (min-width: 446px) and (max-width: $mobile-width-only) {
+  .main-slider__switches {
+    left: 44%;
+  }
+}
+
 @media (min-width: $tablet-width) {
   .main-slider {
     width: 100%;
@@ -132,32 +139,6 @@
   .main-slider__switches {
     bottom: 23px;
     left: 46%;
-  }
-
-  .main-slider__radio {
-    margin-right: 6px;
-    width: 13px;
-    height: 13px;
-    background-color: #ffffff;
-    border-radius: 50%;
-
-    &--active {
-      background-color: transparent;
-      width: 9px;
-      height: 9px;
-    }
-  }
-
-  .main-slider__radio:last-child {
-    margin-right: 0;
-  }
-
-  .main-slider__btn {
-    width: 13px;
-    height: 13px;
-    background-color: transparent;
-    border-radius: 50%;
-    border: none;
   }
 }
 
