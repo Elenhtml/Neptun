@@ -742,13 +742,8 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
-/*.main-contacts__inner-wrapper {
-  display: flex;
-  flex-wrap: wrap;
-}*/
 .main-contacts__header-logo {
   margin-bottom: 12px;
-  /*new*/
   display: block; }
 
 .main-contacts__image-logo {
@@ -1046,16 +1041,14 @@ body {
   width: 166px;
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
-  /*18px;*/
   line-height: 19px;
-  /*20px;*/
   font-weight: bold;
   color: #ffffff;
   text-transform: capitalize;
   text-align: center;
   text-decoration: none;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#48a6ed), to(#0874c5));
-  background-image: linear-gradient(#48a6ed, #0874c5);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#168be3), to(#0269b7));
+  background-image: linear-gradient(#168be3, #0269b7);
   border: none;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
@@ -1102,7 +1095,8 @@ body {
   width: 30px;
   height: 51px;
   background-color: rgba(0, 0, 0, 0.7);
-  border: none; }
+  border: none;
+  z-index: 5; }
   .main-slider__button::before {
     content: "";
     position: absolute;
@@ -1160,6 +1154,10 @@ body {
   border-radius: 50%;
   border: none; }
 
+@media (min-width: 446px) and (max-width: 767px) {
+  .main-slider__switches {
+    left: 44%; } }
+
 @media (min-width: 768px) {
   .main-slider {
     width: 100%;
@@ -1185,25 +1183,7 @@ body {
       background-image: url("../img/arrow-768-left.png"); }
   .main-slider__switches {
     bottom: 23px;
-    left: 46%; }
-  .main-slider__radio {
-    margin-right: 6px;
-    width: 13px;
-    height: 13px;
-    background-color: #ffffff;
-    border-radius: 50%; }
-    .main-slider__radio--active {
-      background-color: transparent;
-      width: 9px;
-      height: 9px; }
-  .main-slider__radio:last-child {
-    margin-right: 0; }
-  .main-slider__btn {
-    width: 13px;
-    height: 13px;
-    background-color: transparent;
-    border-radius: 50%;
-    border: none; } }
+    left: 46%; } }
 
 @media (min-width: 1230px) {
   .main-slider {
