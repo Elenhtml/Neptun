@@ -28,10 +28,18 @@ navServiceMenu.addEventListener("click", function () {
   }
 });
 
+var telForm = document.querySelector('.form__phone');
 var testButton = document.querySelector(".form__button");
 if (testButton) {
   testButton.addEventListener("click", function (evt) {
     evt.preventDefault();
+    if (!telForm.value) {
+      swal({
+        type: 'error',
+        text: 'Заполните обязательное поле: номер телефона'
+      });
+  } else {
     swal("Ваша заявка отправлена!");
+    }
   });
 }
